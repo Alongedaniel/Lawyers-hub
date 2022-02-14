@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.btn {
+  width: 200px;
+  padding: 1rem 1.5rem;
+  background-color: #0d90c2;
+  margin: 0 auto;
+  border: none;
+  color: #fff;
+}
+
+.header-container {
+  background-image: url(../images/top-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  min-height: 700px;
+  max-height: 1100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 12vh;
+}
+
+.navbar {
+  color: #fff;
+  padding: 3rem 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5rem;
+  position: fixed;
+  width: 100vw;
+}
+
+.navbar .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+}
+
+.navbar .nav-link {
+  margin-left: 2rem;
+  opacity: 0.5;
+}
+
+.navbar .nav-link.active {
+  opacity: 1;
+}
+
+@media (min-width: 1100px) {
+  .menu-icon {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1100px) {
+  .nav {
+    display: none;
+  }
+}
+
+.header {
+  max-width: 450px;
+  height: 349px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.header .header-title {
+  font-size: 60px;
+  margin-bottom: 1rem;
+}
+
+.header .header-subtitle {
+  font-size: 25px;
+  margin-bottom: 1rem;
+}
+
+.header .header-paragraph {
+  font-size: 21px;
+  margin-bottom: 1rem;
+}
+
+.aboutus-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../images/bottom-bg.png);
+}
+
+.aboutus-section .aboutus-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.aboutus-section .aboutus-row .aboutus-col {
+  width: 336px;
+  height: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  color: #fff;
+  margin: 1.5rem;
+}
+
+.aboutus-section .aboutus-row .membership {
+  background-image: url(../images/Mask-Groups.png);
+  padding: 2rem;
+}
+
+.aboutus-section .aboutus-row .working-space {
+  background-image: url(../images/Mask-Group.png);
+  padding: 2rem;
+}
+
+.aboutus-section .aboutus-row .text {
+  font-size: 1rem;
+  height: 90px;
+}
+
+.aboutus-section .aboutus-top-row {
+  margin-top: -60px;
+}
+
+.aboutus-section .aboutus-details {
+  width: 336px;
+  height: 320px;
+  margin: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: justify;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: #fff;
+  padding-bottom: 2rem;
+}
+
+.aboutus-section .aboutus-image {
+  width: 336px;
+  height: 320px;
+  margin: 1.5rem;
+  z-index: 1;
+}
+
+.aboutus-section .border {
+  width: 20px;
+  border: 1px solid white;
+  margin-top: .5rem;
+}
+
+.aboutus-section .paragraph {
+  margin-top: .7rem;
+}
+
+.section-two-container {
+  max-width: 1191px;
+  height: 345px;
+  background-color: #fff;
+  margin: -60px  auto 0 auto;
+  padding: 3rem;
+}
+
+.section-two-container .section-two {
+  max-width: 844px;
+  height: 244px;
+  margin: 0 auto;
+  border: 1px solid magenta;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.section-two-container .section-two-paragraph {
+  max-width: 467px;
+  font-size: 1.1rem;
+}
+
+.section-two-container .section-two-list {
+  list-style: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 140px;
+}
+
+.section-two-container .list-items {
+  margin: .5rem;
+}
+/*# sourceMappingURL=style.css.map */

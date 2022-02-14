@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // border: 1px solid magenta;
+}
+.btn {
+    width: 200px;
+    padding: 1rem 1.5rem;
+    background-color: #0d90c2;
+    margin: 0 auto;
+    border: none;
+    color: #fff;
+  }
+
+.header-container {
+  background-image: url(../images/top-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  min-height: 700px;
+  max-height: 1100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 12vh;
+}
+
+.navbar {
+  // max-width: 1200px;
+  color: #fff;
+  padding: 3rem 5vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5rem;
+  position: fixed;
+  width: 100vw;
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+  }
+  .nav-link {
+    margin-left: 2rem;
+    opacity: 0.5;
+  
+    &.active {
+      opacity: 1;
+    }
+  }
+}
+
+//   come back for mobile view
+//   change the font
+
+
+@media (min-width: 1100px) {
+  .menu-icon {
+    display: none !important;
+  }
+}
+@media (max-width: 1100px) {
+  .nav {
+    display: none;
+  }
+}
+.header {
+  max-width: 450px;
+  height: 349px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  color: #fff;
+
+  .header-title {
+    font-size: 60px;
+    margin-bottom: 1rem;
+  }
+  .header-subtitle {
+    font-size: 25px;
+    margin-bottom: 1rem;
+  }
+  .header-paragraph {
+    font-size: 21px;
+    margin-bottom: 1rem;
+  }
+}
+
+.aboutus-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../images/bottom-bg.png);
+
+    .aboutus-row{
+        display: flex;
+        justify-content: center;
+
+        .aboutus-col{
+            width: 336px;
+            height: 320px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            text-align: center;
+            color: #fff;
+            margin: 1.5rem;
+        }
+
+        .membership{
+            background-image: url(../images/Mask-Groups.png);
+            padding: 2rem;
+        }
+
+        .working-space{
+            background-image: url(../images/Mask-Group.png);
+            padding: 2rem;
+        }
+
+        .text{
+            font-size: 1rem;
+            height: 90px;
+        }
+    }
+    .aboutus-top-row{
+        margin-top: -60px;
+    }
+
+    .aboutus-details{
+        width: 336px;
+        height: 320px;
+        margin: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        justify-content: space-around;
+        color: #fff;
+        padding-bottom: 2rem;
+    }
+
+    .aboutus-image{
+        width: 336px;
+        height: 320px;
+        margin: 1.5rem;
+        z-index: 1;
+    }
+    .border{
+        width: 20px;
+        border: 1px solid white;
+        margin-top: .5rem;
+    }
+
+    .paragraph{
+        margin-top: .7rem;
+    }
+}
+
+.section-two-container{
+    max-width: 1191px;
+    height: 345px;
+    background-color: #fff;
+    margin: -60px  auto 0 auto;
+    padding: 3rem;
+
+    .section-two{
+        max-width: 844px;
+        height: 244px;
+        margin: 0 auto;
+        border: 1px solid magenta;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .section-two-paragraph{
+        max-width: 467px;
+        font-size: 1.1rem;
+    }
+
+    .section-two-list{
+        list-style: none;
+        font-size: 1.2rem;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 140px;
+    }
+    .list-items{
+        margin: .5rem;
+    }
+}
