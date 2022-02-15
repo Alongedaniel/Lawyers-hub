@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: 'source sans pro', sans-serif;
+  font-family: "source sans pro", sans-serif;
 }
 
 .btn {
@@ -59,6 +59,10 @@ body {
   margin-bottom: 5rem;
   position: fixed;
   width: 100vw;
+}
+
+.navbar .page-logo {
+  padding-top: 0.5rem;
 }
 
 .navbar .nav {
@@ -155,6 +159,9 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background-image: url(../images/bottom-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .aboutus-section .aboutus-row {
@@ -183,7 +190,7 @@ body {
       justify-content: space-around;
   text-align: center;
   color: #fff;
-  margin: .8rem;
+  margin: 0.8rem;
 }
 
 .aboutus-section .aboutus-row .membership {
@@ -214,7 +221,7 @@ body {
 .aboutus-section .aboutus-details {
   width: 336px;
   height: 320px;
-  margin: .8rem;
+  margin: 0.8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -230,24 +237,25 @@ body {
 }
 
 .aboutus-section .founder-name {
-  font-family: 'mrs saint delafield', cursive;
+  font-size: 20px;
+  font-family: "Mrs Saint Delafield", cursive;
 }
 
 .aboutus-section .aboutus-image {
   width: 336px;
   height: 320px;
-  margin: .8rem;
+  margin: 0.8rem;
   z-index: 1;
 }
 
 .aboutus-section .border {
   width: 20px;
   border: 1px solid white;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
 .aboutus-section .paragraph {
-  margin-top: .7rem;
+  margin-top: 0.7rem;
 }
 
 @media (max-width: 779px) {
@@ -260,15 +268,20 @@ body {
 }
 
 .section-two-container {
-  max-width: 1191px;
-  height: 345px;
-  background-color: #fff;
-  margin: -60px  auto 0 auto;
+  margin: 0 auto;
   padding: 3rem;
+  background-color: #f1f1f1;
+}
+
+.section-two-container .box {
+  max-width: 90vw;
+  padding: 3rem 5vw;
+  margin: -100px auto 5rem auto;
+  background-color: #fff;
 }
 
 .section-two-container .section-two {
-  max-width: 844px;
+  max-width: 710px;
   height: 244px;
   margin: 0 auto;
   display: -webkit-box;
@@ -300,17 +313,277 @@ body {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 140px;
 }
 
 .section-two-container .list-items {
-  margin: .5rem;
+  margin: 0.5rem;
+}
+
+.section-two-container .blogs {
+  padding-left: 23rem;
+  margin: 0 auto;
+}
+
+.section-two-container .blogs .blog-header {
+  width: 326px;
+  line-height: 1rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.section-two-container .blogs .border {
+  width: 20px;
+  border: 1px solid black;
+  margin-top: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.section-two-container .blogs .blog-subtitle {
+  line-height: 1.5rem;
+  margin-bottom: 3rem;
+  padding-left: 1rem;
+}
+
+.section-two-container .blogpost-section {
+  max-width: 1049px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.section-two-container .blogpost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: space-beetween;
+      -ms-flex-pack: space-beetween;
+          justify-content: space-beetween;
+  width: 296px;
+  height: 408px;
+  margin: 1rem;
+  background-color: #fff;
+}
+
+.section-two-container .blogpost-image {
+  width: 296.23px;
+  height: 135.55px;
+  margin: 0;
+  padding: 0;
+}
+
+.section-two-container .blogpost-header {
+  padding-left: 1.5rem;
+  margin: 1rem 0 1rem 1rem;
+  min-height: 235px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section-two-container .blogpost-button {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding: 1rem 2.5rem;
+  background-color: #0d90c2;
+  color: #fff;
+  border: none;
 }
 
 @media (max-width: 760px) {
   .section-two-container .section-two-list {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+  }
+}
+
+@media (max-width: 803px) {
+  .section-two-container .blogs {
+    padding-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+  .section-two-container .blogpost-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 685px) {
+  .section-two-container .section-two {
+    height: 345px;
+  }
+}
+
+.section-three {
+  padding-left: 27rem;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+}
+
+.section-three .partner-header {
+  margin-bottom: 3rem;
+}
+
+.section-three .border {
+  width: 20px;
+  border: 1px solid black;
+  margin-top: 0.5rem;
+}
+
+.section-three .partner-logo {
+  max-width: 1049px;
+  height: 215px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.section-three .logo {
+  margin: 3.5rem;
+}
+
+@media (max-width: 1238px) {
+  .section-three {
+    width: 100%;
+    padding-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+  .partner-logo {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 523px) {
+  .section-three {
+    display: none;
+  }
+}
+
+.footer {
+  background-color: #121212;
+  padding-bottom: 5rem;
+}
+
+.footer .footer-container {
+  max-width: 1049px;
+  padding: 3rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #fff;
+  line-height: 2.5rem;
+}
+
+.footer .footer-container .footer-nav {
+  list-style: none;
+  margin-top: .7rem;
+}
+
+.footer .subscribe-btn {
+  padding: .8rem 4.1rem;
+  background-color: #0d90c2;
+  color: #fff;
+  border: none;
+}
+
+.footer .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footer .icons {
+  margin-right: .5rem;
+}
+
+.footer .footer-menu {
+  margin: 0 2rem;
+}
+
+@media (max-width: 1111px) {
+  .footer-container {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .footer-menu {
+    margin-bottom: 3rem !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

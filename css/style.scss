@@ -1,22 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   // border: 1px solid magenta;
 }
-body{
-  font-family:'source sans pro', sans-serif ;
+body {
+  font-family: "source sans pro", sans-serif;
 }
 .btn {
-    width: 200px;
-    padding: 1rem 1.5rem;
-    background-color: #0d90c2;
-    margin: 0 auto;
-    border: none;
-    color: #fff;
-  }
+  width: 200px;
+  padding: 1rem 1.5rem;
+  background-color: #0d90c2;
+  margin: 0 auto;
+  border: none;
+  color: #fff;
+}
 
 .header-container {
   background-image: url(../images/top-bg.png);
@@ -44,6 +44,10 @@ body{
   position: fixed;
   width: 100vw;
 
+  .page-logo {
+    padding-top: 0.5rem;
+  }
+
   .nav {
     display: flex;
     flex-direction: row;
@@ -52,7 +56,7 @@ body{
   .nav-link {
     margin-left: 2rem;
     opacity: 0.5;
-  
+
     &.active {
       opacity: 1;
     }
@@ -72,8 +76,6 @@ body{
 
 //   come back for mobile view
 //   change the font
-
-
 
 .header {
   width: 500px;
@@ -98,149 +100,340 @@ body{
     margin-bottom: 1rem;
   }
   @media (max-width: 513px) {
-    .header{
+    .header {
       width: 400px;
       text-align: center;
     }
 
-    .header-title{
+    .header-title {
       font-size: 40px;
     }
-    .header-subtitle{
+    .header-subtitle {
       font-size: 20px;
     }
-    .header-paragraph{
+    .header-paragraph {
       font-size: 15px;
       text-align: center;
     }
   }
 }
 
-.aboutus-section{
+.aboutus-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../images/bottom-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .aboutus-row {
+    display: flex;
+    justify-content: center;
+
+    .aboutus-col {
+      width: 336px;
+      height: 320px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      text-align: center;
+      color: #fff;
+      margin: 0.8rem;
+    }
+
+    .membership {
+      background-image: url(../images/Mask-Groups.png);
+      padding: 2rem;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    .working-space {
+      background-image: url(../images/Mask-Group.png);
+      padding: 2rem;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    .text {
+      font-size: 1rem;
+      height: 90px;
+    }
+  }
+  .aboutus-top-row {
+    margin-top: -60px;
+  }
+
+  .aboutus-details {
+    width: 336px;
+    height: 320px;
+    margin: 0.8rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-image: url(../images/bottom-bg.png);
+    text-align: justify;
+    justify-content: space-around;
+    color: #fff;
+    padding-bottom: 2rem;
+  }
+  .founder-name {
+    font-size: 20px;
+    font-family: "Mrs Saint Delafield", cursive;
+  }
 
-    .aboutus-row{
-        display: flex;
-        justify-content: center;
+  .aboutus-image {
+    width: 336px;
+    height: 320px;
+    margin: 0.8rem;
+    z-index: 1;
+  }
+  .border {
+    width: 20px;
+    border: 1px solid white;
+    margin-top: 0.5rem;
+  }
 
-        .aboutus-col{
-            width: 336px;
-            height: 320px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-around;
-            text-align: center;
-            color: #fff;
-            margin: .8rem;
-        }
+  .paragraph {
+    margin-top: 0.7rem;
+  }
 
-        .membership{
-            background-image: url(../images/Mask-Groups.png);
-            padding: 2rem;
-            background-position: center;
-            background-size: contain;
-            background-repeat: no-repeat;
-        }
-
-        .working-space{
-            background-image: url(../images/Mask-Group.png);
-            padding: 2rem;
-            background-position: center;
-            background-size: contain;
-            background-repeat: no-repeat;
-        }
-
-        .text{
-            font-size: 1rem;
-            height: 90px;
-        }
+  @media (max-width: 779px) {
+    .aboutus-row {
+      flex-direction: column;
     }
-    .aboutus-top-row{
-        margin-top: -60px;
-    }
-
-    .aboutus-details{
-        width: 336px;
-        height: 320px;
-        margin: .8rem;
-        display: flex;
-        flex-direction: column;
-        text-align: justify;
-        justify-content: space-around;
-        color: #fff;
-        padding-bottom: 2rem;
-    }
-    .founder-name{
-      font-family: 'mrs saint delafield', cursive;
-    }
-
-    .aboutus-image{
-        width: 336px;
-        height: 320px;
-        margin: .8rem;
-        z-index: 1;
-    }
-    .border{
-        width: 20px;
-        border: 1px solid white;
-        margin-top: .5rem;
-    }
-
-    .paragraph{
-        margin-top: .7rem;
-    }
-
-    @media (max-width: 779px) {
-      .aboutus-row{
-        flex-direction: column;
-      }
-    }
- 
+  }
 }
 
+.section-two-container {
+  margin: 0 auto;
+  padding: 3rem;
+  background-color: #f1f1f1;
 
-.section-two-container{
-    max-width: 1191px;
-    height: 345px;
+  .box {
+    max-width: 90vw;
+    padding: 3rem 5vw;
+    margin: -100px auto 5rem auto;
     background-color: #fff;
-    margin: -60px  auto 0 auto;
-    padding: 3rem;
+  }
 
+  .section-two {
+    max-width: 710px;
+    height: 244px;
+    margin: 0 auto;
+    // border: 1px solid magenta;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .section-two-paragraph {
+    max-width: 467px;
+    font-size: 1.1rem;
+  }
+
+  .section-two-list {
+    list-style: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    // height: 140px;
+  }
+  .list-items {
+    margin: 0.5rem;
+  }
+
+  .blogs {
+    padding-left: 23rem;
+    // max-width: 710px;
+    margin: 0 auto;
+
+
+
+    .blog-header {
+      width: 326px;
+      line-height: 1rem;
+      align-self: center;
+    }
+    .border {
+      width: 20px;
+      border: 1px solid black;
+      margin-top: 0.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .blog-subtitle{
+      line-height: 1.5rem;
+      margin-bottom: 3rem;
+      padding-left: 1rem;
+    }
+  }
+
+  .blogpost-section{
+    max-width: 1049px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .blogpost{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-beetween;
+    width: 296px;
+    height: 408px;
+    margin: 1rem;
+    background-color: #fff;
+  }
+
+  .blogpost-image{
+    width: 296.23px;
+    height: 135.55px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .blogpost-header{
+    padding-left: 1.5rem;
+    margin: 1rem 0 1rem 1rem;
+    min-height: 235px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .blogpost-button{
+    align-self: flex-start;
+    padding: 1rem 2.5rem;
+    background-color: #0d90c2;
+    color: #fff;
+    border: none;
+  }
+
+  @media (max-width: 760px) {
+    .section-two-list {
+      flex-wrap: nowrap;
+    }
+  }
+  @media (max-width: 803px) {
+    .blogs{
+      padding-left: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center !important;
+    }
+    .blogpost-section{
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  @media (max-width: 685px) {
     .section-two{
-        max-width: 844px;
-        height: 244px;
-        margin: 0 auto;
-        // border: 1px solid magenta;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+      height: 345px;
     }
-
-    .section-two-paragraph{
-        max-width: 467px;
-        font-size: 1.1rem;
-    }
-
-    .section-two-list{
-        list-style: none;
-        font-size: 1.2rem;
-        font-weight: bold;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        height: 140px;
-    }
-    .list-items{
-        margin: .5rem;
-    }
-
-    @media (max-width: 760px) {
-      .section-two-list{
-        flex-wrap: nowrap;
-      }
-    }
+  }
 }
+
+.section-three{
+  padding-left: 27rem;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+
+  .partner-header{
+    margin-bottom: 3rem;
+  }
+
+  .border{
+    width: 20px;
+    border: 1px solid black;
+    margin-top: 0.5rem;
+  }
+
+  .partner-logo{
+    max-width: 1049px;
+    height: 215px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .logo{
+    margin: 3.5rem;
+  }
+}
+@media (max-width: 1238px) {
+  .section-three{
+    width: 100%;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+  }
+
+  .partner-logo{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+  }
+}
+@media (max-width: 523px) {
+  .section-three{
+    display: none;
+  }
+}
+
+.footer{
+  background-color: #121212;
+  padding-bottom: 5rem;
+
+  .footer-container{
+    max-width: 1049px;
+    padding: 3rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #fff;
+    line-height: 2.5rem;
+  
+  
+    .footer-nav{
+      list-style: none;
+      margin-top: .7rem;
+    }
+  }
+  .subscribe-btn{
+    padding: .8rem 4.1rem;
+    background-color: #0d90c2;
+    color: #fff;
+    border: none;
+  }
+  .socials{
+    display: flex;
+    flex-direction: row;
+  }
+  .icons{
+    margin-right:.5rem;
+  }
+  .footer-menu{
+    margin: 0 2rem;
+  }
+}
+@media (max-width: 1111px) {
+  .footer-container{
+    flex-direction: column !important;
+  }
+
+  .footer-menu{
+    margin-bottom: 3rem !important;
+  }
+}
+
