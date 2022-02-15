@@ -1,8 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap");
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+body {
+  font-family: 'source sans pro', sans-serif;
 }
 
 .btn {
@@ -76,19 +82,19 @@
 }
 
 @media (min-width: 1100px) {
-  .menu-icon {
+  .navbar .menu-icon {
     display: none !important;
   }
 }
 
 @media (max-width: 1100px) {
-  .nav {
+  .navbar .nav {
     display: none;
   }
 }
 
 .header {
-  max-width: 450px;
+  width: 500px;
   height: 349px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -97,6 +103,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 auto;
   color: #fff;
 }
@@ -112,8 +121,26 @@
 }
 
 .header .header-paragraph {
-  font-size: 21px;
+  font-size: 15px;
+  max-width: 380px;
   margin-bottom: 1rem;
+}
+
+@media (max-width: 513px) {
+  .header .header {
+    width: 400px;
+    text-align: center;
+  }
+  .header .header-title {
+    font-size: 40px;
+  }
+  .header .header-subtitle {
+    font-size: 20px;
+  }
+  .header .header-paragraph {
+    font-size: 15px;
+    text-align: center;
+  }
 }
 
 .aboutus-section {
@@ -156,17 +183,23 @@
       justify-content: space-around;
   text-align: center;
   color: #fff;
-  margin: 1.5rem;
+  margin: .8rem;
 }
 
 .aboutus-section .aboutus-row .membership {
   background-image: url(../images/Mask-Groups.png);
   padding: 2rem;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .aboutus-section .aboutus-row .working-space {
   background-image: url(../images/Mask-Group.png);
   padding: 2rem;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .aboutus-section .aboutus-row .text {
@@ -181,7 +214,7 @@
 .aboutus-section .aboutus-details {
   width: 336px;
   height: 320px;
-  margin: 1.5rem;
+  margin: .8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -196,10 +229,14 @@
   padding-bottom: 2rem;
 }
 
+.aboutus-section .founder-name {
+  font-family: 'mrs saint delafield', cursive;
+}
+
 .aboutus-section .aboutus-image {
   width: 336px;
   height: 320px;
-  margin: 1.5rem;
+  margin: .8rem;
   z-index: 1;
 }
 
@@ -211,6 +248,15 @@
 
 .aboutus-section .paragraph {
   margin-top: .7rem;
+}
+
+@media (max-width: 779px) {
+  .aboutus-section .aboutus-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .section-two-container {
@@ -225,7 +271,6 @@
   max-width: 844px;
   height: 244px;
   margin: 0 auto;
-  border: 1px solid magenta;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -260,5 +305,12 @@
 
 .section-two-container .list-items {
   margin: .5rem;
+}
+
+@media (max-width: 760px) {
+  .section-two-container .section-two-list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
 }
 /*# sourceMappingURL=style.css.map */
